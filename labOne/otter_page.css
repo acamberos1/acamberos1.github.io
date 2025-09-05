@@ -1,0 +1,57 @@
+h1 {
+    color: orange;
+    text-align: center;
+    font-family: 'Pacifico', 'cursive';
+    font-size:max(2vw, 7vw);
+    margin:0 auto;
+}
+
+.teammateName {
+    color: orange;
+    font-size:max(2vw, 4vw);
+}
+
+.photo {
+    width: 100%;
+    height: 300px;
+    border: 5px solid rgb(255, 255, 255);
+    /* This will pink in the photo to the block size. */
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.shrinkPhoto {
+      width: 20%;
+      margin: 0 auto;
+
+    }
+
+.row {
+    display: flex;
+    justify-content: center;
+    /* Content will wrap it the next line if window gets too small */
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.bodyText{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: max(0.8vw, 1.2vw);
+    margin: 0 auto;
+}
+
+
+#footerID {
+    font-size:1vw;
+    color:#e1ac00;
+    text-align:center;
+}
+
+.quote-section {
+  margin-top: 50px; 
+  margin-bottom: 40px;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+}
