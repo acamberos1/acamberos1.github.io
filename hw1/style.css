@@ -1,0 +1,84 @@
+.flexStyle{
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.picStyle{
+     display: flex;
+     flex-wrap: wrap;
+    margin: 10px;
+    border: 5px solid;
+    border-radius: 10px;
+   
+    
+}
+/* flex display makes it a flex container. Justify content center makes sure items are centered.
+/* space between ensure theres even amount of space between items. Justify center makes sure theyre towards center of page */
+
+
+
+/* this will be used for start html */
+.orgNav{
+    font-family: 'Courier New', Courier, monospace;
+    color: darkblue;
+    text-align: center;
+}
+
+.orgSources{
+    font-family: 'Courier New', Courier, monospace;
+   
+    text-align: center;
+}
+
+.orgText{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #6B7280;
+    text-decoration: underline;
+}
+.orgHeaders{
+    font-family: 'Courier New', Courier, monospace;
+      background: #0B1220;   /* charcoal */
+  color: #FFFFFF;        /* readable text on dark bg */
+  padding: 16px 24px;    /* space around your title */
+    text-align: center;
+}
+
+/* used for twine page */
+.twineNav{
+    font-family: 'Courier New', Courier, monospace;
+    color: darkgreen;
+    text-align: center;
+}
+.twineText{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.twineHeaders{
+    font-family: 'Courier New', Courier, monospace;
+      background: #0A192F;
+    color: #FFFFFF;  
+        /* readable text on dark bg */
+  padding: 16px 24px;    /* space around your title */
+    text-align: center;
+}
+/* used for visual novel page */
+.renpyNav{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.renpyText{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.renpyHeaders{
+    font-family: 'Courier New', Courier, monospace;
+      background: beige;   /* indigo */
+  color: darkgray;        /* readable text on dark bg */
+  padding: 16px 24px;    /* space around your title */
+    text-align: center;
+}
+
