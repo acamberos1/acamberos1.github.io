@@ -6,15 +6,7 @@
     flex-wrap: wrap;
     width: 100%;
 }
-.picStyle{
-     display: flex;
-     flex-wrap: wrap;
-    margin: 10px;
-    border: 5px solid;
-    border-radius: 10px;
-   
-    
-}
+
 /* flex display makes it a flex container. Justify content center makes sure items are centered.
 /* space between ensure theres even amount of space between items. Justify center makes sure theyre towards center of page */
 
@@ -29,7 +21,7 @@
 
 .orgSources{
     font-family: 'Courier New', Courier, monospace;
-   
+   list-style: none;
     text-align: center;
 }
 
@@ -75,9 +67,29 @@
     text-align: center;
 }
 .renpyHeaders{
+    font-family: dejaVu Sans Mono, monospace;
+      background: green;   
+  padding: 16px 24px;    /* space around your title */
+    text-align: center;
+}
+.picStyle{
+     display: flex;
+     flex-direction: column; 
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+    
+}
+
+/* quest page css */
+.questNav{
     font-family: 'Courier New', Courier, monospace;
-      background: beige;   /* indigo */
-  color: darkgray;        /* readable text on dark bg */
+    text-align: center;
+}
+.questheaders{
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+             "Liberation Mono", "Noto Mono", "Courier New", monospace;
+      background: beige;   /* maroon */      /* readable text on dark bg */
   padding: 16px 24px;    /* space around your title */
     text-align: center;
 }
