@@ -9,14 +9,27 @@
     <header>
     <h1>Guess the number</h1>
     </header>
-     <button id ="guessButton">Guess</button>
+    <h2>Guess a number between 1 and 99 in seven attempts!</h2>
+     <button id ="guessBtn">Guess</button>
+     <button id="resetBtn"> Reset </button> 
+     <!-- dont forget to make reset attribute in jsNote: The reset button should be initially hidden. We'll hide it using JavaScript. -->
   
-   <input id="guessBox" type="text" size="5">
+   <input id="userGuess" type="text" size="5">
+    <div  id="feedback"> </div>
+       <div> Previous guesses:
+      <span id="guesses"></span>
+     </div>
+   <!-- input ttpye text creates a textbox, the id attaches a functioun -->
    
     <!-- <button onclick="alert('Button clicked!')">Guess</button> -->
      <br>
-     <div id="answers"></div>
+     <!-- Container where guesses get appended as text -->
+ 
+    
+    <h4 id="at">Number of guesses </h4>
+     
        <script src ="js/guess.js">
+       
    </script>
 </body>
 </html>
