@@ -1,0 +1,51 @@
+
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+.textStyle{
+    font-size: 20px;
+    color: blue;
+}
+.wordOne{
+    color: red;
+    font-weight: bold;
+}
+.wordTwo{
+    color: green;
+    font-weight: bold;
+}
+.wordThree{
+    color: orange;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.wordFour{
+    color: purple;
+    font-weight: bold;
+}
+.winStyle{
+    color: green;
+    font-weight: bold;
+}
+.buttonStyle{
+      font-family: system-ui, Arial, sans-serif;
+
+  font-size: 1.1rem;          /* bigger text */
+  padding: 0.6rem 1.1rem;     /* bigger click area */
+  border-radius: 0.6rem;
+  border: 2px solid black;
+  cursor: pointer;
+  
+}
+.buttonStyle:hover{
+    background-color: lightblue;
+    color: violet;
+}
+.textBoxStyle{
+    width: 50px;
+    height: 20px;
+    
+}
+

@@ -8,6 +8,8 @@
 
 let randomNumber;
 console.log(randomNumber); 
+const MAX_ATTEMPTS = 7;
+
 let attempts = 0;
 let win = 0;
 let loss = 0;
@@ -21,16 +23,18 @@ let clickCount = 0;
  {
   randomNumber = Math.floor(Math.random() * 99) + 1;
   console.log("randomNumber " + randomNumber);
-  
+  attempts = 0;
   //hide reset button
   document.querySelector("#resetBtn").style.display = "none";
-  //show guess button
 
 // show guess button
   document.querySelector("#guessBtn").style.display = "inline";
+
+
 let userGuess = document.querySelector("#userGuess");
 userGuess.focus(); // add focus to the input field
 userGuess.value = ""; //. clear textbox
+// clear past feed back and messages
 let feedback = document.querySelector("#feedback");
 feedback.textContent = "";
 
@@ -60,12 +64,17 @@ feedback.textContent = "";
              }
 
              attempts++;
+             document.querySelector("#at").textContent =
+  `Guesses: ${attempts}/${MAX_ATTEMPTS} (${MAX_ATTEMPTS - attempts} left)`;
+
              console.log("attempts " + attempts);
              feedback.style.color = "grey";
                if(userGuess == randomNumber) 
                 {
                     feedback.textContent = "Congratulations! You guessed the number!";
                     feedback.style.color = "green";
+                    win++;
+                    document.querySelector("#wins").textContent = `Wins: ${win}`;
                     gameOver();
                 }
               else
@@ -75,6 +84,8 @@ feedback.textContent = "";
                 {
                   feedback.textContent = "Sorry, you lose. The number was " + randomNumber;
                   feedback.style.color = "red";
+                  loss++;
+                  document.querySelector("#losses").textContent = `Losses: ${loss}`;
                   gameOver();
                 } 
                     else if(userGuess> randomNumber)

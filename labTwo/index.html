@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lab 2: guess number</title>
+    <link rel ="stylesheet" href="css/gameStyle.css">
 </head>
 <body>
     <header>
-    <h1>Guess the number</h1>
+    <h1 class="headerClass">Guess the number!</h1>
     </header>
-    <h2>Guess a number between 1 and 99 in seven attempts!</h2>
-     <button id ="guessBtn">Guess</button>
+    <h2><span class="wordOne">Guess</span> a <span class="wordTwo">number</span> between <span class="wordThree">1</span> and <span class="wordFour">99</span> in seven attempts!</h2>
+     <button id ="guessBtn" class="buttonStyle">Guess</button>
      <button id="resetBtn"> Reset </button> 
      <!-- dont forget to make reset attribute in jsNote: The reset button should be initially hidden. We'll hide it using JavaScript. -->
-  
+ 
    <input id="userGuess" type="text" size="5">
+  
     <div  id="feedback"> </div>
        <div> Previous guesses:
       <span id="guesses"></span>
@@ -24,8 +26,13 @@
     <!-- <button onclick="alert('Button clicked!')">Guess</button> -->
      <br>
      <!-- Container where guesses get appended as text -->
- 
-    
+
+     <div class ="textStyle">
+ <div id="losses"> loss amount</div>
+ </div>
+ <div class ="winStyle">
+  <div id="wins"> win amount</div>
+ </div>
     <h4 id="at">Number of guesses </h4>
      
        <script src ="js/guess.js">
