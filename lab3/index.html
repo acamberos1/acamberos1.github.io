@@ -1,29 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- bootstrap goes in head tag -->
+     <!-- reg css stylehseet must be imported after bootstrap or css go brr -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lab3: Quiz</title>
 </head>
+
 <body>
-    <h1> CSS Quiz</h1>
+    <h1> QUIZ ONE: random trivia</h1>
+
     <!-- whatever topic we want? -->
-   <div>1. What does CSS property changes text color? </div> <br>
-   <label>
-    <input type="radio" name="q1" value="Text-Color"> Text-Color
+    <!-- bubble select type -->
+    <div>Question one: What does html stand for? </div> <br>
+    <label>
+        <input type="radio" name="q1" value="Text-Color"> Text-Color
     </label>
 
-     <label>
-    <input type="radio" name="q1" value="Color"> Font-color
+    <label>
+        <input type="radio" name="q1" value="Color"> Font-color
     </label>
 
-     <label>
-    <input type="radio" name="q1" value="Color"> Color
+    <label>
+        <input type="radio" name="q1" value="Color"> Color
     </label>
     <br>
+    <!-- textbox type -->
+    <div>Question Two: What does css stand for?</div>
+    <br>
+    <label>
+        <input type="text" name="q2" minlength="4" maxlength="8">
+    </label>
+    <br>
+    <!--  remember select must encompass options -->
+      <!-- dropdown q -->
+    <div> Question 3: who wrote harry potter?</div>
+    <label> Pick a name </label>
+        <select id="dropD"> 
+    <option value="jkrowling">J.K Rowling</option>
+    <option>Edgar Allen Poe</option>
+    <option>Rick Riodan</option>
+    <option>J.D Salinger</option>
+        </select>
+        <br>
+<!-- checkbox question -->
+    <div> Question 4: Who was the first president of U.S.A?</div>
+    <label>
+         George Washington
+    <input type="checkbox" name=" checkAnswer1">
+    </label>
+    <label>
+        Abraham Lincoln
+    <input type="checkbox" name=" checkAnswer2">
+    </label>
+    <label>
+       Barack Obama
+    <input type="checkbox" name=" checkAnswer3">
+    </label>
+     <label>
+       John Adams
+    <input type="checkbox" name=" checkAnswer4">
+    </label>
+
+    <!-- dropdown question -->
+     <div>Question 5: What animal is seen on the csumb symbol?</div>
+    <label> The correct animal is: 
+        <select>
+            <option>Otter</option>
+            <option>Lion</option>
+            <option>Hyena</option>
+            <option>Wolf</option>
+        </select>
+    </label>
+    <!-- to seperate the questions from the submit and to look good -->
+    <hr>
     <button id="qzBtn"> Submit Quiz</button>
-    <!--  doeesnt need id if u only need one but lets do it -->
+    <!--  doeesnt need id if u only need one but lets do it  all code between these two comments are for one question-->
+
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
