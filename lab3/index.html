@@ -3,10 +3,12 @@
 
 <head>
     <link rel="stylesheet" href="css/quizStyle.css">
+    
     <!-- bootstrap goes in head tag -->
      <!-- reg css stylehseet must be imported after bootstrap or css go brr -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.6/underscore-min.js"></script>
     <title>lab3: Quiz</title>
 </head>
 
@@ -55,38 +57,35 @@
         <div id="q3Feedback"></div>
         <br>
 <!-- checkbox question 4-->
-    <div> Question Four: Who was the first president of U.S.A?</div>
+    <div> Question Four: Which are the earliest two presidents? <span id="markIMG4"></span></div>
     <label>
          George Washington
-    <input type="checkbox" name=" checkAnswer1" value=" George Washington">
+    <input type="checkbox" id="GW" name=" q4" value="George Washington" > 
     </label>
     <label>
         Abraham Lincoln
-    <input type="checkbox" name=" checkAnswer2" value="Abraham Lincoln">
+    <input type="checkbox" id="AL" name=" q4" value="Abraham Lincoln" >
     </label>
     <label>
        Barack Obama
-    <input type="checkbox" name=" checkAnswer3" value=" Barack Obama">
+    <input type="checkbox" id="BA" name="q4" value="Barack Obama" >
     </label>
      <label>
        John Adams
-    <input type="checkbox" name=" checkAnswer4" value=" John Adams">
+    <input type="checkbox" id="JA" name="q4" value="John Adams" >
     </label>
      <br>
-       <!-- <div id="q4Feedback"></div> -->
+       <div id="q4Feedback"></div>
+     <br>
      <br>
     <!-- dropdown question -->
-     <div>Question Five: What animal is seen on the csumb symbol?</div>
-    <label> The correct animal is: 
-        <select>
-            <option>Otter</option>
-            <option>Lion</option>
-            <option>Hyena</option>
-            <option>Wolf</option>
-        </select>
-    </label>
+     <div>Question Five: What animal is seen on the csumb symbol? <span id="markIMG5"></span></div>
+     <div id="q5Choices"></div>
+     
     <br>
-      <!-- <div id="q5Feedback"></div> -->
+    <br>
+        <div id="q5Feedback"></div>
+    <br>
     <br>
     <!-- to seperate the questions from the submit and to look good -->
      <div class="unAnswered">

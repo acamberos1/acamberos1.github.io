@@ -23,7 +23,19 @@ document.querySelector("#qzBtn").addEventListener("click", gradeQuiz);
 
 
 
+displayQ5Options();
 
+function displayQ5Options(){ 
+    let q5OptionsArr =["otter", "cat", "seal", "dog"];
+    q5OptionsArr = _.shuffle(q5OptionsArr);
+    for (let i=0; i<q5OptionsArr.length;i++)
+        {
+            document.querySelector("#q5Choices").innerHTML += `<input type ="radio" name="q5" id="${q5OptionsArr[i]}"> ${q5OptionsArr[i]}</label>`;
+        }
+
+} // show choices
+
+ 
 
 
 function gradeQuiz() {
@@ -41,15 +53,16 @@ function gradeQuiz() {
 
   //variables to record the answers
     let userAnswer1 = document.querySelector('input[name="q1"]:checked').value
-    alert(userAnswer1);
-    console.log(userAnswer1)
+   
+   
 
     // let userAnswer2
     let userAnswer2 = document.querySelector("#q2").value
      //let userAnswer3
     let userAnswer3 = document.querySelector("#q3").value
 
-    // let userAnswer4 = document.querySelector("#q4").value
+      let userAnswer5 = document.querySelector('input[name="q5"]:checked').value
+      
 
   
 
@@ -81,25 +94,56 @@ function gradeQuiz() {
          document.querySelector("#q2Feedback").innerHTML = "Incorrect";
           document.querySelector("#markIMG2").innerHTML = '<img src="img/xmark.png" alt="wrong">';
     }
+
+    // grading for 3
     if(userAnswer3 =="J.K Rowling")
     {
          document.querySelector("#q3Feedback").innerHTML ="Correct!";
            document.querySelector("#markIMG3").innerHTML = '<img src="img/checkmark.png" alt="Correct">';
+            score+=20;
+
     }else
     {
          document.querySelector("#q3Feedback").innerHTML ="wrong";
           document.querySelector("#markIMG3").innerHTML = '<img src="img/xmark.png" alt="wrong">';
     }
+    // grading for four
 
-    
+
+
+
+    if(document.querySelector("#GW").checked && document.querySelector("#JA").checked && !document.querySelector("#BA").checked && !document.querySelector("#AL").checked)
+    {
+        document.querySelector("#q4Feedback").innerHTML ="Correct!";
+         document.querySelector("#markIMG4").innerHTML = '<img src="img/checkmark.png" alt="Correct">';
+          score+=20;
+
+    } else
+    {
+      document.querySelector("#q4Feedback").innerHTML ="wrong";  
+       document.querySelector("#markIMG4").innerHTML = '<img src="img/xmark.png" alt="wrong">';
+    }
+
+    //grade for 5
+
+    if(userAnswer5 =="otter")
+    {
+        document.querySelector("#q5Feedback").innerHTML ="Correct!";
+        document.querySelector("#markIMG5").innerHTML = '<img src="img/checkmark.png" alt="Correct">';
+        score+=20;
+
+    }else
+        {
+           document.querySelector("#q5Feedback").innerHTML = "Incorrect";
+            document.querySelector("#markIMG5").innerHTML = '<img src="img/xmark.png" alt="wrong">';
+           
+        }
 
      document.querySelector("#totalScore").innerHTML= `Total Score: ${score}`;
   
     
    
-    //let user Answer4
-    // let userAnswer4 = document.querySelector("#q4").value
-    //    alert(userAnswer4)
+  
     // // let user Answer5
     // let userAnswer5 = document.querySelector("#q5")
     //    alert(userAnswer5)
