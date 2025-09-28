@@ -1,3 +1,4 @@
+
 document.querySelector("#qzBtn").addEventListener("click", gradeQuiz); 
 // the code above links the html button to run the function defined below
 
@@ -21,17 +22,18 @@ document.querySelector("#qzBtn").addEventListener("click", gradeQuiz);
 
 
 
+let attempts= localStorage.getItem("tryCount");
 
 
 displayQ5Options();
 
 function displayQ5Options(){ 
-    let q5OptionsArr = ["otter", "cat", "seal", "dog"];
-    q5OptionsArr = _.shuffle(q5OptionsArr);
-    for (let i = 0; i < q5OptionsArr.length; i++) {
-        document.querySelector("#q5Choices").innerHTML += `<label><input type="radio" name="q5" value="${q5OptionsArr[i]}"> ${q5OptionsArr[i]}</label><br>`;
-    }
-
+    let q5OptionsArr =["otter", "cat", "seal", "dog"];
+q5OptionsArr = _.shuffle(q5OptionsArr);
+    for (let i=0; i<q5OptionsArr.length;i++)
+        {
+            document.querySelector("#q5Choices").innerHTML += `<input type ="radio" name="q5" id="${q5OptionsArr[i]}" value="${q5OptionsArr[i]}"> <label for="${q5OptionsArr[i]}"> ${q5OptionsArr[i]}</label>`;
+        }
 
 } // show choices
 
@@ -62,7 +64,6 @@ function gradeQuiz() {
     let userAnswer3 = document.querySelector("#q3").value
 
       let userAnswer5 = document.querySelector('input[name="q5"]:checked').value
-      
 
   
 
@@ -140,6 +141,13 @@ function gradeQuiz() {
         }
 
      document.querySelector("#totalScore").innerHTML= `Total Score: ${score}`;
+     document.querySelector("#tryCount").innerHTML = `Total attempts: ${++attempts}`;
+     localStorage.setItem("tryCount", attempts);
+
+
+     if (score > 80) {
+    document.querySelector("#totalScore").innerHTML += "<br>Congratulations! Great job!";
+}
   
     
    

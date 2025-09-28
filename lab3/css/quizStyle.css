@@ -1,3 +1,53 @@
 .unAnswered{
     color: red;
 }
+.title{
+    font-family: "Georgia", serif;
+}
+
+body{
+  margin: 0;
+  background: #e9d6a9 url("img/paper-texture.jpg") center / 512px 512px repeat fixed;
+  
+  font-family: Georgia, "Times New Roman", serif;
+  
+}
+.qStyle{
+    color: #191970;
+   font-family: "Lucida Console", monospace;
+    font-size: larger;
+}
+.scoreS{
+    color: gray;
+font-family: "Courier New", monospace;
+font-size: large;
+
+
+}
+.q3Style{
+    color: black;
+    font-family: "Garamond", serif;
+      font-size: larger;
+      
+}
+.q4Style{
+      font-size: larger;
+      font-family: cursive;
+}
+.q5Style{
+    color: darkblue;
+    font-size: larger;
+}
+button {
+    background-color: #d3d3d3;
+    color: #333;
+    border: 3px outset #d3d3d3;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0; /* Makes it square */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    <h1>QUIZ ONE: random trivia</h1>
+    <h1 class="title">QUIZ ONE: random trivia</h1>
 
     <!-- whatever topic we want? -->
     <!-- bubble select type -->
-    <div> Question one: what planet are we on? <span id="markIMG1"></span></div>
+    <div class="qStyle"> Question one: what planet are we on? <span id="markIMG1"></span></div>
      <br>
     <label>
         <input type="radio" name="q1" value="Earth"> Earth
@@ -44,7 +44,7 @@
     <!--  remember select must encompass options -->
       <!-- dropdown q3 -->
        <br>
-    <div> Question Three: who wrote harry potter? <span id="markIMG3"></span></div>
+    <div class="q3Style"> Question Three: who wrote harry potter? <span id="markIMG3"></span></div>
     
     <label> Pick a name </label>
         <select id="q3"> 
@@ -57,7 +57,7 @@
         <div id="q3Feedback"></div>
         <br>
 <!-- checkbox question 4-->
-    <div> Question Four: Which are the earliest two presidents? <span id="markIMG4"></span></div>
+    <div class="q4Style"> Question Four: Which are the earliest two presidents? <span id="markIMG4"></span></div>
     <label>
          George Washington
     <input type="checkbox" id="GW" name=" q4" value="George Washington" > 
@@ -79,7 +79,7 @@
      <br>
      <br>
     <!-- dropdown question -->
-     <div>Question Five: What animal is seen on the csumb symbol? <span id="markIMG5"></span></div>
+     <div class="q5Style">Question Five: What animal is seen on the csumb symbol? <span id="markIMG5"></span></div>
      <div id="q5Choices"></div>
      
     <br>
@@ -95,7 +95,8 @@
     <button id="qzBtn"> Submit Quiz</button>
     <br>
     <!--  doeesnt need id if u only need one but lets do it -->
-      <h4 id="totalScore">total Score</h4>
+      <h4 class="scoreS" id="totalScore">total Score</h4>
+      <h5 id="tryCount"> attempts tried</h5>
 
 
     <script src="js/script.js"></script>
