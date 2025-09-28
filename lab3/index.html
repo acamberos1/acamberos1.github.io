@@ -27,45 +27,49 @@
         <input type="radio" name="q1" value="Color"> Color
     </label>
     <br>
+    <br>
     <!-- textbox type -->
     <div>Question Two: What does css stand for?</div>
-    <br>
     <label>
-        <input type="text" name="q2" minlength="4" maxlength="8">
+        <input type="text" id="q2" name="q2" minlength="4" maxlength="21">
     </label>
     <br>
     <!--  remember select must encompass options -->
       <!-- dropdown q -->
-    <div> Question 3: who wrote harry potter?</div>
+       <br>
+    <div> Question Three: who wrote harry potter?</div>
+    
     <label> Pick a name </label>
-        <select id="dropD"> 
+        <select id="q3"> 
     <option value="jkrowling">J.K Rowling</option>
     <option>Edgar Allen Poe</option>
     <option>Rick Riodan</option>
     <option>J.D Salinger</option>
         </select>
         <br>
+        <br>
 <!-- checkbox question -->
-    <div> Question 4: Who was the first president of U.S.A?</div>
+    <div> Question Four: Who was the first president of U.S.A?</div>
     <label>
          George Washington
-    <input type="checkbox" name=" checkAnswer1">
+    <input type="checkbox" name=" checkAnswer1" value=" George Washington">
     </label>
     <label>
         Abraham Lincoln
-    <input type="checkbox" name=" checkAnswer2">
+    <input type="checkbox" name=" checkAnswer2" value="Abraham Lincoln">
     </label>
     <label>
        Barack Obama
-    <input type="checkbox" name=" checkAnswer3">
+    <input type="checkbox" name=" checkAnswer3" value=" Barack Obama">
     </label>
      <label>
        John Adams
-    <input type="checkbox" name=" checkAnswer4">
+    <input type="checkbox" name=" checkAnswer4" value=" John Adams">
     </label>
-
+     <br>
+     <br>
     <!-- dropdown question -->
-     <div>Question 5: What animal is seen on the csumb symbol?</div>
+     <div>Question Five: What animal is seen on the csumb symbol?</div>
     <label> The correct animal is: 
         <select>
             <option>Otter</option>
@@ -74,7 +78,10 @@
             <option>Wolf</option>
         </select>
     </label>
+    <br>
+    <br>
     <!-- to seperate the questions from the submit and to look good -->
+     <h3 id="validateFB">feedback?</h3>
     <hr>
     <button id="qzBtn"> Submit Quiz</button>
     <!--  doeesnt need id if u only need one but lets do it  all code between these two comments are for one question-->
