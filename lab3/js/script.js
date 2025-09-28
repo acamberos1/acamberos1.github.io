@@ -39,11 +39,25 @@ function gradeQuiz() {
     {
         return
     }
+
+    // variables to record values for grading
+    let score =0;
   
     let userAnswer1 = document.querySelector('input[name="q1"]:checked').value
     alert(userAnswer1);
     console.log(userAnswer1)
-     
+    //grading for q1
+    if(userAnswer1 =="Earth")
+    {
+        document.querySelector("#q1Feedback").innerHTML ="Correct!";
+        score+=20;
+
+    }else
+        {
+           document.querySelector("#q1Feedback").innerHTML = "Incorrect";
+           
+        }
+     document.querySelector("#totalScore").innerHTML= `Total Score: ${score}`;
   
     // let userAnswer2
     let userAnswer2 = document.querySelector("#q2").value

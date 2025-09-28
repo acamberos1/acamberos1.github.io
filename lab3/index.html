@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="css/quizStyle.css">
     <!-- bootstrap goes in head tag -->
      <!-- reg css stylehseet must be imported after bootstrap or css go brr -->
     <meta charset="UTF-8">
@@ -14,19 +15,21 @@
 
     <!-- whatever topic we want? -->
     <!-- bubble select type -->
-    <div>Question one: What does html stand for? </div> <br>
+    <div>Question one: what planet are we on? </div> <br>
     <label>
-        <input type="radio" name="q1" value="Text-Color"> Text-Color
+        <input type="radio" name="q1" value="Earth"> Earth
     </label>
 
     <label>
-        <input type="radio" name="q1" value="Color"> Font-color
+        <input type="radio" name="q1" value="Saturn"> Saturn
     </label>
 
     <label>
-        <input type="radio" name="q1" value="Color"> Color
+        <input type="radio" name="q1" value="Venus"> Venus
     </label>
     <br>
+    <br>
+    <div id="q1Feedback"></div>
     <br>
     <!-- textbox type -->
     <div>Question Two: What does css stand for?</div>
@@ -81,10 +84,14 @@
     <br>
     <br>
     <!-- to seperate the questions from the submit and to look good -->
-     <h3 id="validateFB">feedback?</h3>
+     <div class="unAnswered">
+     <h3 id="validateFB" ></h3>
+     </div>
     <hr>
     <button id="qzBtn"> Submit Quiz</button>
-    <!--  doeesnt need id if u only need one but lets do it  all code between these two comments are for one question-->
+    <br>
+    <!--  doeesnt need id if u only need one but lets do it -->
+      <h4 id="totalScore">total Score</h4>
 
 
     <script src="js/script.js"></script>
