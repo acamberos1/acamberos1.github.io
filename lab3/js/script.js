@@ -26,12 +26,12 @@ document.querySelector("#qzBtn").addEventListener("click", gradeQuiz);
 displayQ5Options();
 
 function displayQ5Options(){ 
-    let q5OptionsArr =["otter", "cat", "seal", "dog"];
+    let q5OptionsArr = ["otter", "cat", "seal", "dog"];
     q5OptionsArr = _.shuffle(q5OptionsArr);
-    for (let i=0; i<q5OptionsArr.length;i++)
-        {
-            document.querySelector("#q5Choices").innerHTML += `<input type ="radio" name="q5" id="${q5OptionsArr[i]}"> ${q5OptionsArr[i]}</label>`;
-        }
+    for (let i = 0; i < q5OptionsArr.length; i++) {
+        document.querySelector("#q5Choices").innerHTML += `<label><input type="radio" name="q5" value="${q5OptionsArr[i]}"> ${q5OptionsArr[i]}</label><br>`;
+    }
+
 
 } // show choices
 
