@@ -1,10 +1,6 @@
 document.querySelector("#qzBtn").addEventListener("click", gradeQuiz); 
 // the code above links the html button to run the function defined below
-// const result1 = document.querySelector("#result1");
-// const result2 = document.querySelector("#result2");
-// const result3 = document.querySelector("#result3");
-// const result4 = document.querySelector("#result4");
-// const result5 = document.querySelector("#result5");
+
 
 
  function isFormValid()
@@ -42,29 +38,65 @@ function gradeQuiz() {
 
     // variables to record values for grading
     let score =0;
-  
+
+  //variables to record the answers
     let userAnswer1 = document.querySelector('input[name="q1"]:checked').value
     alert(userAnswer1);
     console.log(userAnswer1)
+
+    // let userAnswer2
+    let userAnswer2 = document.querySelector("#q2").value
+     //let userAnswer3
+    let userAnswer3 = document.querySelector("#q3").value
+
+    // let userAnswer4 = document.querySelector("#q4").value
+
+  
+
+
+
     //grading for q1
     if(userAnswer1 =="Earth")
     {
         document.querySelector("#q1Feedback").innerHTML ="Correct!";
+        document.querySelector("#markIMG1").innerHTML = '<img src="img/checkmark.png" alt="Correct">';
         score+=20;
 
     }else
         {
            document.querySelector("#q1Feedback").innerHTML = "Incorrect";
+            document.querySelector("#markIMG1").innerHTML = '<img src="img/xmark.png" alt="wrong">';
            
         }
+    // grading for q2
+    // needs a diff img class
+    if(userAnswer2== "cascading style sheets")
+    {
+          document.querySelector("#q2Feedback").innerHTML ="Correct!";
+            document.querySelector("#markIMG2").innerHTML = '<img src="img/checkmark.png" alt="Correct">';
+             score+=20;
+
+    } else
+    {
+         document.querySelector("#q2Feedback").innerHTML = "Incorrect";
+          document.querySelector("#markIMG2").innerHTML = '<img src="img/xmark.png" alt="wrong">';
+    }
+    if(userAnswer3 =="J.K Rowling")
+    {
+         document.querySelector("#q3Feedback").innerHTML ="Correct!";
+           document.querySelector("#markIMG3").innerHTML = '<img src="img/checkmark.png" alt="Correct">';
+    }else
+    {
+         document.querySelector("#q3Feedback").innerHTML ="wrong";
+          document.querySelector("#markIMG3").innerHTML = '<img src="img/xmark.png" alt="wrong">';
+    }
+
+    
+
      document.querySelector("#totalScore").innerHTML= `Total Score: ${score}`;
   
-    // let userAnswer2
-    let userAnswer2 = document.querySelector("#q2").value
-    alert(userAnswer2)
-    //let userAnswer3
-    let userAnswer3 = document.querySelector("#q3").value
-    alert(userAnswer3)
+    
+   
     //let user Answer4
     // let userAnswer4 = document.querySelector("#q4").value
     //    alert(userAnswer4)

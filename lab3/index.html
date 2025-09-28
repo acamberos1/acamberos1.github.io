@@ -11,11 +11,12 @@
 </head>
 
 <body>
-    <h1> QUIZ ONE: random trivia</h1>
+    <h1>QUIZ ONE: random trivia</h1>
 
     <!-- whatever topic we want? -->
     <!-- bubble select type -->
-    <div>Question one: what planet are we on? </div> <br>
+    <div> Question one: what planet are we on? <span id="markIMG1"></span></div>
+     <br>
     <label>
         <input type="radio" name="q1" value="Earth"> Earth
     </label>
@@ -32,26 +33,28 @@
     <div id="q1Feedback"></div>
     <br>
     <!-- textbox type -->
-    <div>Question Two: What does css stand for?</div>
+    <div>Question Two: What does css stand for? <span id="markIMG2"></span></div>
     <label>
-        <input type="text" id="q2" name="q2" minlength="4" maxlength="21">
+        <input type="text" id="q2" name="q2" minlength="4" maxlength="22">
     </label>
     <br>
+      <div id="q2Feedback"></div>
     <!--  remember select must encompass options -->
-      <!-- dropdown q -->
+      <!-- dropdown q3 -->
        <br>
-    <div> Question Three: who wrote harry potter?</div>
+    <div> Question Three: who wrote harry potter? <span id="markIMG3"></span></div>
     
     <label> Pick a name </label>
         <select id="q3"> 
-    <option value="jkrowling">J.K Rowling</option>
+    <option value="J.K Rowling">J.K Rowling</option>
     <option>Edgar Allen Poe</option>
     <option>Rick Riodan</option>
     <option>J.D Salinger</option>
         </select>
         <br>
+        <div id="q3Feedback"></div>
         <br>
-<!-- checkbox question -->
+<!-- checkbox question 4-->
     <div> Question Four: Who was the first president of U.S.A?</div>
     <label>
          George Washington
@@ -70,6 +73,7 @@
     <input type="checkbox" name=" checkAnswer4" value=" John Adams">
     </label>
      <br>
+       <!-- <div id="q4Feedback"></div> -->
      <br>
     <!-- dropdown question -->
      <div>Question Five: What animal is seen on the csumb symbol?</div>
@@ -82,6 +86,7 @@
         </select>
     </label>
     <br>
+      <!-- <div id="q5Feedback"></div> -->
     <br>
     <!-- to seperate the questions from the submit and to look good -->
      <div class="unAnswered">
