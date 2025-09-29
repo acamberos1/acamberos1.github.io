@@ -28,7 +28,7 @@
                 return;
             }
             
-            rollBtn.disabled = true;
+          
             resultEl.textContent = "Rolling...";
             resultEl.className = "result";
             
