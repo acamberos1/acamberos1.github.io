@@ -1,0 +1,39 @@
+
+.heading{
+     
+      font-size: 2em;
+      color: antiquewhite;
+}
+body{
+    background-color: green;
+    text-align: center;
+}
+.text
+{
+    color: whitesmoke;
+}
+.dicePortrait{
+ width: 100px;                    /* Makes the square 100 pixels wide */
+    height: 100px;                   /* Makes the square 100 pixels tall */
+    background-color: white;         /* Makes the square WHITE */
+    border-radius: 15px;             /* Rounds the corners */
+    display: flex;                   /* Uses flexbox for centering */
+    align-items: center;             /* Centers dice vertically */
+    justify-content: center;         /* Centers dice horizontally */
+    font-size: 2em;                  /* Makes the dice symbol large */
+    color: #2c3e50;                  /* Makes the dice symbol dark gray */
+    margin: 0 auto;                  /* Centers the square itself */
+}
+  button {
+            background-color: red;
+            color: white;
+            
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+         button:hover {
+            background-color:whitesmoke;
+        }
