@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 4:Sig Up Page</title>
@@ -9,31 +10,50 @@
 
 <body>
 
-    <h1> Sign Up Form </h1>
-
+    <h1 class="headerStyle"> Sign Up Form </h1>
+<form id ="signupForm" action ="welcome.html">
     <fieldset>
         <legend>Sign Up</legend>
-        First Name: <input type="text"><br>
-        Last Name: <input type="text"><br>
-        Email: <input type="text"><br>
+<div class ="textLook">
+        First Name: <input type="text" name="fName"><br>
+        Last Name: <input type="text" name="lName"><br>
+        Email:  ✉️ <input type="text" name ="Email"><br>
         Phone Number:<input type="text"><br><br>
         Zip Code: <input id="zip" type="text"><br>
+        
+        <span id="misZip"></span>
+        <br>
         City: <span id="city"></span>
         <br>
-        Latitude:
+        Latitude: <span id="lat"></span>
         <br>
-        Longitude:
+        Longitude:<span id ="long"></span>
         <br><br>
         State: 
         <select id="state">
         </select><br>
-        Select a County: <select></select><br>
+        <!-- drop down code for state -->
+        Select a County: <select id="county"></select><br>
 
-        Desired Username: <input type="text"><br>
-        Password: <input type="password"><br>
-        Type Password Again: <input type="password"><br>
-        <input type="submit" value="Sign up!">
+
+        Desired Username: <input type="text" id="username" name="username"><br>
+        <span id="usernameError"></span><br>
+        <!-- code to detect username validity -->
+        Password: <input id ="password" type="password"><br>
+
+        Type Password Again: <input id="password2" type="password"><br>
+        <span id="passwordError"></span><br>
+        <!-- code to detect password validity -->
+         <div id="passwordSuggestion"></div>
+
+
+</div>
+       
+        <input class="btnStyle" type="submit" value="Sign up!">
+
     </fieldset>
+
+ </form>
 
     <script src="js/script.js"></script>
 
