@@ -58,7 +58,7 @@ function validateForm(e)
         alert("Password must be at least 6 characters");
         isValid = false;
     } else if (password !== password2) {
-        passwordErr.textContent = "Passwords do not match";
+        passwordErr.textContent = "retype password must match";
         passwordErr.style.color = "red";
         isValid = false;
     }
